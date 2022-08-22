@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manual Testing✍️</title>
+    <!-- <style>
+      .main-body {
+        display: grid;
+        grid-template-columns: minmax(300px, auto) 1fr;
+        grid-template-areas: "navbar mainContent";
+        gap: 20px;
+      }
+      #navbar {
+        grid-area: navbar;
+        position: fixed;
+      }
+      #navbar a {
+        display: block;
+        border: 1px solid black;
+        padding: 5px;
+        margin: 10px 0;
+        text-decoration: none;
+        color: black;
+      }
+      #main-doc {
+        grid-area: mainContent;
+      }
+      header {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+    </style> -->
+    <style>
+      #main-header {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(255, 93, 34);
+      }
+      .content {
+        /* display: inline-block; */
+        width: 150px;
+        height: 100%;
+        position: fixed;
+        /* grid-area: mainContent; */
+
+        /* display: flex; */
+        flex-direction: column;
+        width: 300px;
+      }
+      .navbar {
+        position: fixed;
+        grid-area: mainContent;
+
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+      }
+      #main-doc {
+        margin-left: 300px;
+        margin-right: auto;
+        width: 900px;
+      }
+      .navbar p {
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .navbar a {
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 5px;
+        margin: 10px auto;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        background-color: rgb(202, 255, 202);
+      }
+      .sub-heading {
+        color: rgb(255, 152, 115);
+      }
+      .main-section {
+        font-size: 1.2rem;
+      }
+      #unorderls-1 > li {
+        display: inline;
+        padding: 10px 30px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: rgb(255, 248, 188);
+      }
+      #testcase {
+        background-color: rgb(235, 128, 128);
+      }
+      #backto-workshop {
+        color: rgb(255, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-body">
+      <header id="main-header">
+        <h1>All about Manual Testing</h1>
+      </header>
+    </div>
+    <div class="content">
+      <nav class="navbar">
+        <h2 class="sub-heading">Contents of the page:</h2>
+
+        <a href="#what">What is Manual Testing</a>
+        <a href="#goal">Goal of Manual Testing</a>
+        <a href="#steps">Steps in Manual Testing</a>
+        <a href="#why">Why we need Manual Testing</a>
+        <a href="#types">Types of Manual Testing</a>
+        <a href="#how">How to perform Manual Testing</a>
+        <a id="backto-workshop" href="http://127.0.0.1:5500/workshop_form.html"
+          >Click here to go back</a
+        >
+        <p>Click here to see the sample test case document &darr;</p>
+        <a id="testcase" href="http://127.0.0.1:5500/test_case_sample.html"
+          >Sample Test Case document</a
+        >
+      </nav>
+    </div>
+    <article id="main-doc">
+      <section class="main-section" id="what">
+        <div>
+          <div>
+            <h2 class="sub-heading">What is Manual Testing ?</h2>
+            <p>
+              Manual Testing is a type of software testing in which test cases
+              are executed manually by a tester without using any automated
+              tools. The purpose of Manual Testing is to identify the bugs,
+              issues, and defects in the software application. Manual software
+              testing is the most primitive technique of all testing types and
+              it helps to find critical bugs in the software application.
+            </p>
+          </div>
+          <hr />
+        </div>
+      </section>
+      <section class="main-section" id="goal">
+        <div>
+          <div>
+            <h2 class="sub-heading">Goal of Manual Testing</h2>
+            <p>
+              The key concept of manual testing is to ensure that the
+              application is error free and it is working in conformance to the
+              specified functional requirements.
+            </p>
+            <p>
+              Test Suites or cases, are designed during the testing phase and
+              should have 100% test coverage.
+            </p>
+            <p>
+              It also makes sure that reported defects are fixed by developers
+              and re-testing has been performed by testers on the fixed defects.
+              Basically, this testing checks the quality of the system and
+              delivers bug-free product to the customer.
+            </p>
+          </div>
+          <hr />
+        </div>
+      </section>
+      <section class="main-section" id="steps">
+        <div>
+          <h2 class="sub-heading">Steps in Manual Testing</h2>
+          <ol>
+            <li>Requirement gathering</li>
+            <li>Requirement Discussion</li>
+            <li>Designing</li>
+            <li>Test Scenario / Test Case designing</li>
+            <li>Development phase</li>
+            <li>Testing phase</li>
+            <li>Business Analyst Review</li>
+            <li>Shipment / Release</li>
+          </ol>
+        </div>
+        <hr />
+      </section>
+      <section class="main-section" id="need">
+        <div>
+          <div>
+            <h2 class="sub-heading">Why we need manual testing ?</h2>
+            <p>
+              Whenever an application comes into the market, and it is unstable
+              or having a bug or issues or creating a problem while end-users
+              are using it.
+            </p>
+            <p>
+              If we don't want to face these kinds of problems, we need to
+              perform one round of testing to make the application bug free and
+              stable and deliver a quality product to the client, because if the
+              application is bug free, the end-user will use the application
+              more conveniently.
+            </p>
+            <p>
+              If the test engineer does manual testing, he/she can test the
+              application as an end-user perspective and get more familiar with
+              the product, which helps them to write the correct test cases of
+              the application and give the quick feedback of the application.
+            </p>
+          </div>
+          <hr />
+        </div>
+      </section>
+      <section class="main-section" id="types">
+        <div>
+          <div>
+            <h2 class="sub-heading">Types of Manual Testing</h2>
+            <ul id="unorderls-1">
+              <li>White Box Testing</li>
+              <li>Black Box Testing</li>
+              <li>Grey Box Testing</li>
+            </ul>
+            <p>Types of Black Box Testing:</p>
+            <ol>
+              <li>
+                Functional Testing
+                <ul id="unorderls-2">
+                  <li>Unit Testing</li>
+                  <li>Integration Testing</li>
+                  <li>System Testing</li>
+                </ul>
+              </li>
+              <li>
+                Non-Functional Testing
+                <ul id="unorderls-3">
+                  <li>Performace Testing</li>
+                  <li>Usability Testing</li>
+                  <li>Compatability Testing</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <hr />
+      </section>
+      <section class="main-section" id="how">
+        <div>
+          <div>
+            <h2 class="sub-heading">How to perform Manual Testing</h2>
+            <ol>
+              <li>
+                Read and understand the software project documentation/guides.
+                Also, study the Application Under Test (AUT) if available.
+              </li>
+              <li>
+                Draft Test cases that cover all the requirements mentioned in
+                the documentation.
+              </li>
+              <li>
+                Review and baseline the test cases with Team Lead, Client (as
+                applicable)
+              </li>
+              <li>Execute the test cases on the AUT</li>
+              <li>Report bugs.</li>
+              <li>
+                Once bugs are fixed, again execute the failing test cases to
+                verify they pass.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </article>
+  </body>
+</html>

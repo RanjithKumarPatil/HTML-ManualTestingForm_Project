@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manual Testing Workshop Registration Form</title>
+    <style>
+      .schedule {
+        list-style-type: square;
+      }
+      .user-guide {
+        width: 400px;
+        color: rgb(216, 29, 29);
+      }
+      
+      h1 {
+        margin-left: 350px;
+        margin-right: 350px;
+        text-align: center;
+        background: linear-gradient(azure,rgb(148, 148, 248));
+      }
+      h2 {
+        text-align: center;
+        background: radial-gradient(aliceblue, rgb(135, 217, 250));
+        /* background-color: ; */
+      }
+      .participant-information {
+        
+        font-size: 1rem;
+      }
+      .p-information{
+        border-color: rgb(255, 195, 117);
+        
+        border-radius: 10px;
+        padding: 15px 120px;
+      }
+      
+      .section1{
+        padding: 35px 50px;
+        line-height: 1.5rem;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 15px;
+        border-style: dashed;
+        background: radial-gradient(aliceblue,rgb(245, 208, 208));
+        /* background-color: ; */
+      }
+      .section2{
+        padding: 35px 50px;
+        line-height: 1.5rem;
+        
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 15px;
+        border-style: dashed;
+        background: radial-gradient(rgb(255, 244, 230), rgb(248, 220, 168));
+        
+
+      }
+      .section3{
+        line-height: 1.5rem;
+        padding: 35px 50px;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 15px;
+        border-style: dashed;
+        background: radial-gradient(rgb(221, 255, 255), rgb(188, 188, 248));
+        
+      }
+      textarea#cmnts{
+        border-color: rgb(2, 252, 252);
+        border-radius: 15px;
+
+      }
+      p{
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      a{
+        text-decoration: none;
+        font-size: 1.1rem;
+      }
+      #submit{
+        margin: 5px 70px;
+        border-color: rgb(2, 255, 255);
+        border-radius: 15px;
+        padding: 15px 30px;
+        font-size: larger;
+      }
+      #payment{
+        padding: 10px 20px;
+        border-radius: 15px;
+        border-color: rgb(2, 255, 255);
+      }
+      #manual{
+        border: 2px solid rgb(125, 125, 253);
+        border-radius: 15px;
+        font-weight: bold;
+        padding: 6px 20px;
+        font-style: italic;
+        background-color: rgb(199, 228, 247);
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Manual Testing Virtual Workshop Registration Form</h1>
+    <div class="container">
+      <section class="section1">
+      <div class="user-guide">
+        <p>
+          Join the 3-day Manual Testing virtual workshop and become a hirable
+          freelancer
+        </p>
+        <p>Participation Fee: Rs 999/-</p>
+        <p>Limited slots! Reserve now!</p>
+      </div>
+      <div>
+        <p style="padding: 0px 50px; margin-bottom: 0px">
+          Virtual Workshop Schedule
+        </p>
+        <div >
+          <ul class="schedule">
+            <li>May 1-3  [9:00 AM - 1:00 PM IST]</li>
+            <li>May 15 -18  [9:00 AM - 1:00 PM IST]</li>
+            <li>June 1-3  [9:00 AM - 1:00 PM IST]</li>
+            <li>June 15-18  [9:00 AM - 1:00 PM IST]</li>
+            <li>July 1-3  [9:00 AM - 1:00 PM IST]</li>
+            <li>July 15-18  [9:00 AM - 1:00 PM IST]</li>
+          </ul>
+          
+        </div>
+      </div>
+      <div>
+        <form action="">
+          <p>Please rate your manual testing knowledge</p>
+          <input type="checkbox" id="rating-1" name="poor" value="1" />
+          <label for="no idea">I don't have any idea at all</label><br />
+          <input type="checkbox" id="rating-2" name="below-average" value="2" />
+          <label for="2">I know basics about Testing</label><br />
+          <input type="checkbox" id="rating-3" name="average" value="3" />
+          <label for="3">I have watched tutorials online</label><br />
+          <input type="checkbox" id="rating-4" name="good" value="4" />
+          <label for="4">I have a manual testing related work experience</label
+          ><br />
+          <input type="checkbox" name="excellent" id="rating-5" value="5" />
+          <label for="5"
+            >I am currently working as manual tester and wants to improve my
+            testing skills</label
+          ><br />
+        </form>
+      </div>
+      <div>
+        <p>I'd like to learn about the following:</p>
+        <input
+          type="checkbox"
+          id="rtest"
+          name="Regression"
+          value="Regression-test"
+        />
+        <label for="Regression-test">Regression Testing</label><br />
+        <input type="checkbox" id="utest" name="unit" value="unit-test" />
+        <label for="unit-test">Unit Testing</label><br />
+        <input
+          type="checkbox"
+          id="itest"
+          name="integration"
+          value="integration-test"
+        />
+        <label for="integration-test">Integration Testing</label><br />
+        <input
+          type="checkbox"
+          id="ptest"
+          name="performace"
+          value="performance-test"
+        />
+        <label for="performance-test">Performance Testing</label><br />
+        <input
+          type="checkbox"
+          id="ctest"
+          name="compatability"
+          value="compatability-test"
+        />
+        <label for="compatability-test">Compatability Testing</label><br />
+        <p>Here you can see all about Manual testing</p>
+        <a id="manual" href="http://127.0.0.1:5500/manual_testing.html#how">All about Manual Testing &srarr;</a>
+      </div>
+    </section>
+    </div>
+    <div>
+      <h2>Participant Information</h2>
+      <section class="section2">
+      <form action="">
+        <div class="participant-information">
+          <label for="name">Name:</label><br />
+          <input
+            type="text"
+            class="p-information"
+            name="name"
+            placeholder="Enter your name"
+          />
+          <br />
+          <label for="phonenumber">Phone Number:</label><br />
+          <input
+            type="text"
+            class="p-information"
+            name="phone-number"
+            placeholder="Enter your Phone Number"
+          />
+          <br />
+          <label for="emailid">Email:</label><br />
+          <input
+            type="text"
+            name="email-id"
+            class="p-information"
+            placeholder="Enter your Email"
+          /><br />
+          <label for="address">Address:</label><br />
+          <textarea
+            name="address"
+            class="p-information"
+            id="address1"
+            cols="30"
+            rows="5"
+            placeholder="Enter your address"
+          ></textarea
+          ><br />
+          <label for="occup">Occupation:</label><br />
+          <input
+            type="text"
+            name="occup"
+            class="p-information"
+            placeholder="Optional / Current or Previous"
+          /><br />
+          <label for="cname">Company Name:</label><br />
+          <input
+            type="text"
+            class="p-information"
+            name="cname"
+            placeholder="Optional / Current or Previous"
+          /><br />
+          <label for="ptitle">Job Position Title:</label><br />
+          <input
+            type="text"
+            name="ptitle"
+            class="p-information"
+            placeholder="Optional / Current or Previous"
+          /><br />
+        </div>
+      </form>
+    </section>
+    </div>
+    <div >
+      <h2>Payment Information</h2>
+      <section class="section3">
+      <div class="payment-information">
+      <div>
+        <p>Workshop Dates</p>
+        <input type="checkbox" id="date1" name="5-1-3" value="may1-3" />
+        <label for="may1-3">May 1-3</label><br />
+        <input type="checkbox" id="date2" name="5-15-18" value="may15-18" />
+        <label for="may15-18">May 15-18</label><br />
+        <input type="checkbox" id="date3" name="6-1-3" value="june1-3" />
+        <label for="june1-3">June 1-3</label><br />
+        <input type="checkbox" id=date4" name="6-15-18" value="june15-18" />
+        <label for="june15-18">June 15-18</label><br />
+        <input type="checkbox" name="7-1-3" id="date5" value="july1-3" />
+        <label for="july1-3">July 1-3</label><br />
+        <input type="checkbox" name="7-15-18" id="date6" value="july15-18" />
+        <label for="july15-18">Julay 15-18</label><br />
+      </div>
+      <div>
+        <p>Virtual Workshop Payment</p>
+        <input type="radio" name="pfee" id="fee" />
+        <label for="fee">Participation Fee Rs 999/-</label>
+        <p>
+          Total
+          <button>Rs:</button>
+        </p>
+      </div>
+      <div>
+        <label for="pmethod">Payment Method</label>
+        <select
+          name="pmethod"
+          id="payment"
+          aria-placeholder="Select Payment Method"
+        >
+          <optgroup label="Method">
+            <option value="card">Credit / Debit Card</option>
+            <option value="upi">UPI Payment</option>
+            <option value="net">Net Banking</option>
+          </optgroup>
+        </select>
+      </div>
+      <div>
+        <p>Any additional comments or information you would like to share ?</p>
+        <textarea name="comments" id="cmnts" cols="50" rows="10"></textarea>
+      </div>
+      <div>
+        <p>How did you hear about Workshop ?</p>
+        <input type="checkbox" id="web" name="site" value="web-site" />
+        <label for="web-site">Website</label><br />
+        <input type="checkbox" id="insta" name="igram" value="insta-gram" />
+        <label for="insta-gram"">Instagram</label><br />
+        <input type="checkbox" id="clg" name="frnd" value="clg-frnd" />
+        <label for="clg-frnd">College / Friend</label><br />
+        <input type="checkbox" id="search" name="online" value="online-search" />
+        <label for="online-search">Online Search</label><br />
+        <input type="checkbox" name="othr" id="otr" value="oth" />
+        <button>Other</button><br /> 
+      </div>
+      <input type="submit" name="submit" id="submit" value="Register">
+    </div>
+    </section>
+   </div>
+
+  </body>
+</html>
